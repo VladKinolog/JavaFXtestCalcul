@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<GridPane fx:controller="sample.Controller"
+
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          hgap="2"
+          vgap="10">
+    <padding>
+        <Insets top="25"
+                right="25"
+                bottom="10"
+                left="25"/>
+    </padding>
+
+    <HBox   spacing="27"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="0"
+            GridPane.columnSpan="2">
+
+
+        <Text text="Калькулятор"
+            />
+
+        <Button text="C"
+                fx:id="button_cancel"
+                onAction="#cancelBut"
+                minHeight="20"
+                minWidth="40"/>
+
+    </HBox>
+
+
+    <Label text="="
+           GridPane.columnIndex="0"
+           GridPane.rowIndex="1"/>
+
+    <TextField
+            fx:id="textField"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="1"
+            maxWidth="135"/>
+
+    <GridPane GridPane.columnIndex="1"
+              GridPane.rowIndex="2"
+              hgap="5"
+              vgap="5">
+
+          <Button text="1"
+                  fx:id="button1"
+                  onAction="#button1"
+              GridPane.columnIndex="0"
+              GridPane.rowIndex="0"
+                  minHeight="30"
+                  minWidth="30"
+          />
+          <Button text="2"
+                  fx:id="button2"
+                  onAction="#button2"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="0"
+                  minHeight="30"
+                  minWidth="30"
+          />
+          <Button text="3"
+                  fx:id="button3"
+                  onAction="#button3"
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="0"
+                  minHeight="30"
+                  minWidth="30"
+          />
+          <Button text="4"
+                  fx:id="button4"
+                  onAction="#button4"
+                GridPane.columnIndex="0"
+                GridPane.rowIndex="1"
+                  minHeight="30"
+                  minWidth="30"
+          />
+          <Button text="5"
+                  fx:id="button5"
+                  onAction="#button5"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="1"
+                  minHeight="30"
+                  minWidth="30"
+          />
+          <Button text="6"
+                  fx:id="button6"
+                  onAction="#button6"
+                GridPane.columnIndex="2"
+                GridPane.rowIndex="1"
+                  minHeight="30"
+                  minWidth="30"
+        />
+        <Button text="7"
+                fx:id="button7"
+                onAction="#button7"
+                GridPane.columnIndex="0"
+                GridPane.rowIndex="2"
+                minHeight="30"
+                minWidth="30"
+        />
+        <Button text="8"
+                fx:id="button8"
+                onAction="#button8"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="2"
+                minHeight="30"
+                minWidth="30"
+        />
+        <Button text="9"
+                fx:id="button9"
+                onAction="#button9"
+                GridPane.columnIndex="2"
+                GridPane.rowIndex="2"
+                minHeight="30"
+                minWidth="30"
+        />
+        <Button text="."
+                fx:id="pointButton"
+                onAction="#button_point"
+                GridPane.columnIndex="0"
+                GridPane.rowIndex="3"
+                minHeight="30"
+                minWidth="30"
+        />
+        <Button text="0"
+                fx:id="button0"
+                onAction="#button_0"
+                GridPane.columnIndex="1"
+                GridPane.rowIndex="3"
+                minHeight="30"
+                minWidth="30"
+        />
+        <Button text="="
+                fx:id="equalButton"
+                onAction="#button_equal"
+                GridPane.columnIndex="2"
+                GridPane.rowIndex="3"
+                minHeight="30"
+                minWidth="30"
+        />
+        <Button text="+"
+                fx:id="plusButton"
+                onAction="#button_plus"
+                GridPane.columnIndex="3"
+                GridPane.rowIndex="0"
+                minHeight="30"
+                minWidth="30"
+        />
+        <Button text="-"
+                fx:id="minusButton"
+                onAction="#button_minus"
+                GridPane.columnIndex="3"
+                GridPane.rowIndex="1"
+                minHeight="30"
+                minWidth="30"
+        />
+        <Button text="*"
+                fx:id="multiplyButton"
+                onAction="#button_multiply"
+                GridPane.columnIndex="3"
+                GridPane.rowIndex="2"
+                minHeight="30"
+                minWidth="30"
+        />
+        <Button text="/"
+                fx:id="divideButton"
+                onAction="#button_divide"
+                GridPane.columnIndex="3"
+                GridPane.rowIndex="3"
+                minHeight="30"
+                minWidth="30"
+        />
+
+    </GridPane>
+
+</GridPane>
